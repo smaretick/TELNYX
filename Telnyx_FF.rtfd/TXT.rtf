@@ -1,0 +1,269 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red196\green26\blue22;
+\red0\green0\blue0;\red255\green255\blue255;\red27\green29\blue31;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c77000\c10200\c8600;
+\csgray\c0;\csgray\c100000;\cssrgb\c14118\c15294\c16078;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww27720\viewh13200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 18 JULY 2018
+\b0\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 1. navigate to {\field{\*\fldinst{HYPERLINK "https://telnyx.com/"}}{\fldrslt https://telnyx.com/}}Flog\
+2. enter email address (xpath==.//*[@id='home_hero--email_form_cta']/form/div[1]/input)\
+3. select \'93Try Telnyx\'94  (xpath==.//*[@id='home_hero--email_form_cta']/form/div[2]/div/button)\
+4. CREATE ACCOUNT PAGE ( https://telnyx.com/sign-up?email=scottmaretick51%40gmail.com )\
+	FULL NAME = (xpath==.//*[@id='fullname-undefined-objectObject-46937'] )\
+	PASSWORD = (xpath== .//*[@id='password-undefined-objectObject-27336'] )\
+	HAVE A PROMO CODE = (xpath== .//*[@id='root']/article/div[2]/main/div/div/div/div[2]/form/div[4]/a/span )\
+	CREATE MY ACCOUNT = (xpath== .//*[@id='root']/article/div[2]/main/div/div/div/div[2]/form/div[5]/div/button )\
+	TERMS AND CONDITIONS = (xpath== .//*[@id='root']/article/div[2]/main/div/div/div/div[2]/form/div[6]/p/a/span )\
+5. VERIFY YOUR ACCOUNT (https://telnyx.com/sign-up/get-started/verify)\
+	ENTER PHONE NUMBER = (xpath== .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/div/section/form/div[1]/div/div[2]/div/input )\
+	SEND MY CODE = (xpath== .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/div/section/form/div[3]/div/button )\
+	VERIFY MY ACCOUNT FIELD= (.//*[@id='confirmationCode-undefined-undefined-12013\'92])\
+	VERIFY MY ACCOUNT BUTTON = (.//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/div/section/form/div[2]/div/button)\
+	***TIME OUT FOR ACCOUNT VERIFICATION***	\
+6. RESUBMIT PHONE FOR VERIFICATION\
+7. LET\'92S GET YOU STARTED (https://telnyx.com/sign-up/get-started/your-use-case)\
+	SEND & RECEIVE SMS =     ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/form/div[1]/div[1]/div/figcaption/div/a )\
+		https://telnyx.com/sign-up/get-started/claim-phone-number\
+	CLAIM THIS NUMBER= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/div/section/main/form/div[3]/div/button )\
+		https://telnyx.com/sign-up/get-started/send-and-receive-sms\
+			OUTBOUND SETTINGS= ( .//*[@id='outboundtab'] )\
+				MESSAGE= ( .//*[@id='body-undefined-Message-57689'] )\
+				SHOW DELIVERY STATUS FIELDS= ( .//*[@id='outboundpanel']/form/section[2]/div/div[3]/button )\
+				SEND MESSAGE= ( .//*[@id='outboundpanel']/form/section[2]/div/div[4]/div/button )\
+				GET MORE SMS-CAPABLE NUMBERS= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/footer/div/div[1]/div/a )\
+				VIEW MESSAGING API DOCS= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/footer/div/div[2]/div/a )\
+				VISIT KNOWLEDGE BASE= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/footer/div/div/div/a )\
+			INBOUND SETTINGS= ( .//*[@id='inboundtab'] )\
+				WEBHOOK URL= ( .//*[@id='incomingwebhookurl-undefined-objectObject-2128'] ) == REQUIRED\
+				used GitHub account == {\field{\*\fldinst{HYPERLINK "https://github.com/smaretick"}}{\fldrslt https://github.com/smaretick}} \'97 VALIDATE or ERR?\
+				FAILOVER URL= ( .//*[@id='failoverurl-undefined-objectObject-47596'] ) == OPTIONAL\
+				SAVE INBOUND SETTINGS= ( .//*[@id='inboundpanel']/section/form/div[3]/div/button )\
+					SAVED INBOUND SETTINGS EVEN THOUGH PAGE HAD FOLLOWING (indicating I wasn\'92t signed in)\
+						
+\fs24 {{\NeXTGraphic TELNYX-SIGNIN.png \width4180 \height1440 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}
+\fs36 \
+				GET MORE SMS-CAPABLE NUMBERS= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/footer/div/div[1]/div/a )\
+				VIEW MESSAGING API DOCS= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/footer/div/div[2]/div/a )\
+				VISIT KNOWLEDGE BASE= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/footer/div/div/div/a )\
+\
+		MISSION CONTROL PORTAL = https://portal.telnyx.com/#/app/numbers/my-numbers\
+			( .//*[@id='root']/article/div[2]/main/div/div/div/section/footer/div/p[2]/a )\
+\
+\
+			HOVER BRINGS UP DROPDOWN (.//*[@id='userInfo-dropdownToggle']/div/div[2]				\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic telynx_account.png \width5180 \height7680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+				MY ACCOUNT ( .//*[@id='mi1']/a )\
+				MY ORGANIZATION ( .//*[@id='mi2']/a )\
+				BILLING OVERVIEW ( .//*[@id='mi3']/a )\
+				REFERRALS ( .//*[@id='mi4']/a )\
+				LOG OUT ( .//*[@id='mi5'] )\
+				\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic telnyx_portal.png \width5280 \height14460 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+				NUMBERS (.//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[1]/nav-bubble-link/bubble-link/a/div[2] )\
+				MESSAGING (.//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[2]/nav-bubble-link/bubble-link/a/div[2] )\
+				OUTBOUND ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[3]/nav-bubble-link/bubble-link/a/div[2] )\
+				CONNECTIONS ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[4]/nav-bubble-link/bubble-link/a/div[2] )\
+				NETWORKING ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[5]/nav-bubble-link/bubble-link/a/div[2] )\
+				TELCO DATA ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[6]/nav-bubble-link/bubble-link/a/div[2] )\
+				REPORTING ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[7]/nav-bubble-link/bubble-link/a/div[2] )\
+				DEBUGGING ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[8]/nav-bubble-link/bubble-link/a/div[2] )\
+				AUTH ( .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[9]/nav-bubble-link/bubble-link/a/div[2] )\
+			BILLING\
+				ACCOUNT ( .//*[@id='sideNav-content']/side-nav/nav/section[2]/ul/li[1]/nav-bubble-link/bubble-link/a/div[2] )\
+				OVERVIEW ( .//*[@id='sideNav-content']/side-nav/nav/section[2]/ul/li[2]/nav-bubble-link/bubble-link/a/div[2] )\
+				PRICING ( .//*[@id='sideNav-content']/side-nav/nav/section[2]/ul/li[3]/nav-bubble-link/bubble-link/a/div[2] )\
+			RESOURCES\
+				SUPPORT ( .//*[@id='sideNav-content']/side-nav/nav/section[3]/ul/li[1]/a/div[2] )\
+				API DOCS ( .//*[@id='sideNav-content']/side-nav/nav/section[3]/ul/li[2]/a/div[2] )\
+				COMMUNITY (  .//*[@id='sideNav-content']/side-nav/nav/section[3]/ul/li[3]/a/div[2] )\
+				FEATURE REQUEST ( .//*[@id='sideNav-content']/side-nav/nav/section[3]/ul/li[4]/a/div[2] )\
+\
+			ENTER MISSION CONTROL PORTAL= ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/footer/div/div[1]/div/a )\
+				( from https://telnyx.com/sign-up/get-started/send-and-receive-sms)\
+				\
+	CONFIGURE SIP TRUNKS = ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/form/div[1]/div[2]/div/figcaption/div/a )\
+\
+\
+	I\'92M NOT SURE YET =            ( .//*[@id='root']/article/div[2]/main/div/div/div/section/div[2]/section/form/div[2]/div/a )\
+\
+\
+	TAKE ME STRAIGHT TO MISSION CONTROL PANEL = (.//*[@id='root']/article/div[2]/main/div/div/div/section/footer/div/p[2]/a)\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 19 JULY 2018\
+\
+1. 
+\b0 https://portal.telnyx.com/#/login/sign-in
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 	log in: email== .//*[@id='email']  \
+		
+\f1 \cf2 \cb3 driver.find_element_by_xpath(\cf4 "
+\f0 \cf0 \cb1 .//*[@id='email\'92]
+\f1 \cf4 \cb3 \'94\cf2 ).clear()\
+		driver.find
+\f0 \cf0 \cb1 \
+		
+\f2\fs30 \cf5 \cb6 \CocoaLigature0 driver.find_element_by_css_selector("#email").clear()\
+		driver.find_element_by_css_selector("#email\'94).sendkeys\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs36 \cf2 \cb3 \CocoaLigature1 		\cf7 \cb8 \expnd0\expndtw0\kerning0
+//input[contains(@id,'name')]
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+		    passwd== .//*[@id='password']\
+		    remember my email address== html/body/ui-view/div/div/ui-view/div/div[2]/div/form/div[4]/label\
+		    forgot your password== html/body/ui-view/div/div/ui-view/div/div[2]/div/form/div[3]/a\
+		    Log in== html/body/ui-view/div/div/ui-view/div/div[2]/div/form/div[5]/react-button/button\
+	log in Google ( html/body/ui-view/div/div/ui-view/div/div[2]/div/div/div[1]/react-button/button )\
+		
+\f1 \cf2 \cb3 driver.find_element_by_xpath(\cf4 "
+\f0 \cf0 \cb1 html/body/ui-view/div/div/ui-view/div/div[2]/div/div/div[1]/react-button/button
+\f1 \cf4 \cb3 "\cf2 ).click()
+\f0 \cf0 \cb1 \
+	log in Facebook ( html/body/ui-view/div/div/ui-view/div/div[2]/div/div/div[2]/a/react-button/button )\
+	log in LinkedIn ( html/body/ui-view/div/div/ui-view/div/div[2]/div/div/div[3]/a/react-button/button )		    \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 1-LogIn.png \width26800 \height15640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 2-LogIn.png.png \width26860 \height15640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+2. FORGOT PASSWORD ( html/body/ui-view/div/div/ui-view/div/div[2]/div/form/div[3]/a )\
+       https://portal.telnyx.com/#/login/password-reset\
+    RESET PASSWORD\
+	-ENTER EMAIL ( .//*[@id='email'] )\
+	-Reset Password BUTTON ( html/body/ui-view/div/div/ui-view/div/div[2]/div/section/form/div[3]/react-button/button )\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 8-ResetPassword.png \width26840 \height15740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+    CHANGE PASSWORD\
+	https://portal.telnyx.com/#/login/change-password?reset_password_token=cXze6TbtuAyPUgptULfb\
+	Password== .//*[@id='password']\
+	Confirm Password== .//*[@id='confirmPassword']\
+	I already have an account== html/body/ui-view/div/div/ui-view/div/div[2]/div/section/form/p/a\
+	Update Password== html/body/ui-view/div/div/ui-view/div/div[2]/div/section/form/div[3]/react-button/button\
+\
+3. PAYMENT METHOD\
+	https://portal.telnyx.com/#/app/numbers/my-numbers\
+		open (+) ( .//*[@id='navView-content']/div[2]/global-header/div/div[1]/user-balance/div/div/div/div/div/button )\
+		close popup ( html/body/div[1]/div/div/div/div[1]/div[1]/button )\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 6-PaymentMethod.png \width26920 \height15360 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\
+4. SORT BY\
+	DROPDOWN ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[1]/div[1]/div/div/div[1]/span )\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 7-SortBy.png \width26760 \height15720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic 12-TELNYX-PAGE.png \width26760 \height15640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\
+4. MISC LINKS & DROPDOWNS\
+	SEARCH & BUY NUMBERS ( .//*[@id='navView-content']/div[2]/div/div[2]/ul/li[1]/a )\
+	MY NUMBERS ( .//*[@id='navView-content']/div[2]/div/div[2]/ul/li[2]/a )\
+	PORT NUMBERS ( .//*[@id='navView-content']/div[2]/div/div[2]/ul/li[3]/a )\
+	ORDERS ( .//*[@id='navView-content']/div[2]/div/div[2]/ul/li[4]/a )\
+	CART ( .//*[@id='navView-content']/div[2]/global-header/div/div[2]/telnyx-number-cart-button/a )\
+	STATUS ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[1]/form/div[2]/div[1]/div/div/div[1]/span/i )\
+	VOICE BILLING METHOD ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[1]/form/div[2]/div[2]/div/div/div[1]/span/i )\
+	TAG ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[1]/form/div[2]/div[3]/div/div/div[1]/span/i )\
+	CLEAR FILTERS ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[1]/form/div[3]/div/div/div[1]/button )\
+	NO CONNECTION ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[1]/form/div[1]/div[1]/div/div[2]/label )\
+	APPLY ( )\
+	ORDER DATE ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[1]/div[1]/div/div/div[1]/span )\
+	NUMBERS PER PAGE (25) ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[1]/div[3]/div/button[1] )\
+						  (50) ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[1]/div[3]/div/button[2] )\
+						  (100) ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[1]/div[3]/div/button[3] )\
+	SELECT CONNECTION ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[4]/span/div/div/span/div/div[1]/span/i )\
+	PAY PER MINUTE ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[5]/span/div/span/div/div[1]/span/i )\
+	EMERGENCY SERVICES ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[1] )\
+	CALL FORWARDING ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[2] )\
+	CALLER ID/CNAM LISTING ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[3] )\
+	CALLER ID NAME (INCOMING) ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[4] )\
+	SMS/MESSAGING ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[5] )\
+	INBOUND CALL RECORDING ( .//*[@id='navView-content']/div[2]/div/div[2]/div/div/div/div/section/div[2]/div[3]/div[2]/form/table/tbody/tr/td[6]/span/button[6] )\
+	CONNECT sip.telnyx.com ( .//*[@id='footer']/div/div/p[1]/b/a )\
+	RELEASE NOTES (.//*[@id='footer']/div/div/p[2]/a )\
+	CHAT ( .//*[@id='intercom-container']/div/div[2] )\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 20 JULY 2018
+\b0 \
+
+\b 21 JULY 2018\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 name= full_name
+\b \
+22 JULY 2018
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 23 JULY 2018
+\b0 \
+	https://portal.telnyx.com/#/app/numbers/my-numbers\
+	MY NUMBERS xpath .//*[@id='sideNav-content']/side-nav/nav/section[1]/ul/li[1]/nav-bubble-link/bubble-link/a/div[2]
+\b \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\b0\fs24 \cf0 {{\NeXTGraphic MyNumbers.png \width26620 \height15120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+}

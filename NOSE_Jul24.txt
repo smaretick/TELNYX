@@ -1,0 +1,25 @@
+
+Move into directory ~/Python/2.7/site-packages/
+/usr/bin/python
+/usr/bin/python2.7
+/usr/bin/python2.7-config
+
+type sudo easy_install pip.
+/usr/local/bin/pip
+
+type sudo easy_install virtualenv.
+/usr/local/bin/virtualenv
+
+type pip install nose
+Requirement already satisfied: nose in /Library/Python/2.7/site-packages (1.3.7)
+stevedore 1.28.0 has requirement six>=1.10.0, but you'll have six 1.4.1 which is incompatible.
+Scotts-MacBook-Pro:bin scottmaretick$ which nosetests
+/usr/local/bin/nosetests
+
+
+
+type sudo easy_install distribute.
+distribute 0.7.3 is already the active version in easy-install.pth
+
+
+Follow the steps as instructed in the Learn Python The Hard Way book.
